@@ -1,0 +1,682 @@
+{
+  "intents": [
+    {
+      "tag": "wake_word",
+      "patterns": [
+        "hey okdriver",
+        "ok driver",
+        "hey driver",
+        "hello driver",
+        "hi driver",
+        "okay driver",
+        "hey ok driver",
+        "okdriver",
+        "wake up",
+        "are you there"
+      ],
+      "responses": [
+        "Yes, I'm listening. How can I help you?",
+        "I'm here. What do you need?",
+        "OKDriver ready. What can I do for you?",
+        "Listening. Go ahead with your question.",
+        "At your service. What would you like to know?",
+        "I'm here and ready to assist you.",
+        "Yes, how can I help you today?"
+      ]
+    },
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hello",
+        "hi",
+        "hey",
+        "good morning",
+        "good afternoon",
+        "good evening",
+        "what's up",
+        "howdy",
+        "hey there",
+        "hello there",
+        "namaste",
+        "vanakkam",
+        "namaskar",
+        "sat sri akal"
+      ],
+      "responses": [
+        "Hello! Welcome to OKDriver. How can I assist you?",
+        "Hi there! I'm your OKDriver assistant. What can I do for you?",
+        "Hey! Great to see you. How can I help with your journey?",
+        "Good day! I'm here to make your drive better. What do you need?",
+        "Hello! Ready to help you with anything you need."
+      ]
+    },
+    {
+      "tag": "how_are_you",
+      "patterns": [
+        "how are you",
+        "how are you doing",
+        "how's it going",
+        "how do you do",
+        "you okay",
+        "how are you today",
+        "what's up with you",
+        "how is everything"
+      ],
+      "responses": [
+        "I'm doing great, thank you for asking! How can I help you?",
+        "I'm fantastic and ready to assist you with your drive!",
+        "All systems are go! I'm here to help you.",
+        "I'm excellent! Thanks for checking in. What do you need?",
+        "Doing well! Ready to make your driving experience better."
+      ]
+    },
+    {
+      "tag": "time",
+      "patterns": [
+        "what time is it",
+        "tell me the time",
+        "current time",
+        "what's the time",
+        "time now",
+        "do you have the time",
+        "what is the time right now",
+        "can you tell me the time",
+        "time please",
+        "give me the time"
+      ],
+      "responses": [
+        "The current time is {time}.",
+        "It's {time} right now.",
+        "Right now, it's {time}.",
+        "According to my system, it's {time}.",
+        "The time is {time}."
+      ]
+    },
+    {
+      "tag": "date",
+      "patterns": [
+        "what's the date today",
+        "what is today's date",
+        "current date",
+        "tell me the date",
+        "what day is it",
+        "today's date",
+        "date today",
+        "what is the date",
+        "give me today's date",
+        "which day is it"
+      ],
+      "responses": [
+        "Today's date is {date}.",
+        "It's {date}.",
+        "Today is {date}.",
+        "According to the calendar, it's {date}.",
+        "The date today is {date}."
+      ]
+    },
+    {
+      "tag": "day",
+      "patterns": [
+        "what day is it today",
+        "what day is today",
+        "tell me the day",
+        "which day",
+        "day today",
+        "is it monday",
+        "is it tuesday",
+        "is it wednesday",
+        "is it thursday",
+        "is it friday",
+        "is it saturday",
+        "is it sunday"
+      ],
+      "responses": [
+        "Today is {day}.",
+        "It's {day} today.",
+        "Today is {day}. Have a great day!",
+        "According to my calendar, it's {day}."
+      ]
+    },
+    {
+      "tag": "weather",
+      "patterns": [
+        "what's the weather like",
+        "weather today",
+        "is it going to rain",
+        "weather forecast",
+        "temperature outside",
+        "how's the weather",
+        "tell me the weather",
+        "weather update",
+        "will it rain today",
+        "is it sunny",
+        "is it cloudy",
+        "weather report"
+      ],
+      "responses": [
+        "I don't have real-time weather data. Please check your weather app for accurate information.",
+        "For weather updates, I'd recommend checking a weather app or website like AccuWeather.",
+        "I can't access live weather data right now. You might want to check your local weather forecast.",
+        "Weather information is best checked on your phone's weather app for accuracy.",
+        "I don't have weather capabilities yet, but you can check Google for the latest forecast."
+      ]
+    },
+    {
+      "tag": "traffic",
+      "patterns": [
+        "traffic conditions",
+        "how's the traffic",
+        "traffic update",
+        "is there traffic",
+        "traffic jam",
+        "road conditions",
+        "is the road clear",
+        "traffic status",
+        "any traffic",
+        "traffic near me",
+        "current traffic"
+      ],
+      "responses": [
+        "I recommend checking Google Maps or Waze for real-time traffic updates.",
+        "For accurate traffic information, your navigation app would be the best source.",
+        "You can use Google Maps to see current traffic conditions on your route.",
+        "I'd suggest opening your favorite navigation app for live traffic data.",
+        "Traffic conditions change quickly. Please check your maps app for updates."
+      ]
+    },
+    {
+      "tag": "navigation",
+      "patterns": [
+        "navigate to",
+        "directions to",
+        "how to get to",
+        "way to",
+        "route to",
+        "take me to",
+        "find location",
+        "nearest",
+        "close to me",
+        "near me",
+        "gas station near me",
+        "restaurant near me",
+        "hospital near me",
+        "hotel near me",
+        "atm near me"
+      ],
+      "responses": [
+        "I can help with navigation. Please open Google Maps or your preferred navigation app for directions.",
+        "For accurate navigation, please use Google Maps. I'm here to assist with other questions!",
+        "I'd recommend using your favorite maps app for turn-by-turn directions.",
+        "Navigation is best done through dedicated apps like Google Maps or Apple Maps.",
+        "Your navigation app will give you the most accurate and up-to-date directions."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thank you",
+        "thanks",
+        "thank you so much",
+        "thanks a lot",
+        "appreciate it",
+        "thanks a bunch",
+        "much obliged",
+        "thank you very much",
+        "thanks a ton"
+      ],
+      "responses": [
+        "You're welcome! Happy to help!",
+        "My pleasure! Drive safely!",
+        "Anytime! That's what I'm here for.",
+        "Glad I could assist! Have a great drive!",
+        "You're very welcome! Let me know if you need anything else."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you later",
+        "see you soon",
+        "take care",
+        "bye bye",
+        "have a good day",
+        "talk to you later",
+        "see ya",
+        "alvida",
+        "bye for now"
+      ],
+      "responses": [
+        "Goodbye! Drive safely and have a wonderful day!",
+        "See you later! Safe travels!",
+        "Take care! I'll be here when you need me.",
+        "Bye! Enjoy your journey and stay safe!",
+        "See you soon! Remember to drive carefully."
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "help",
+        "what can you do",
+        "help me",
+        "what do you do",
+        "capabilities",
+        "features",
+        "what are your features",
+        "how can you help",
+        "tell me about yourself",
+        "what can you do for me"
+      ],
+      "responses": [
+        "I can help you with time, date, navigation, traffic updates, weather information, and general questions. Just ask me anything!",
+        "I'm your driving assistant! I can tell you the time and date, help with navigation, provide traffic info, and answer general questions.",
+        "You can ask me about time, date, weather, traffic, navigation, or just chat with me. I'm here to make your drive better!",
+        "I can assist with various tasks like checking time and date, providing navigation help, traffic updates, weather info, and more. What do you need?"
+      ]
+    },
+    {
+      "tag": "capabilities",
+      "patterns": [
+        "what can you do",
+        "your features",
+        "your capabilities",
+        "what are you capable of",
+        "what do you know",
+        "your skills",
+        "what are your skills",
+        "tell me your features"
+      ],
+      "responses": [
+        "I can tell you the current time and date, help with navigation queries, provide traffic updates, share weather information, answer general knowledge questions, and have friendly conversations!",
+        "My capabilities include: time and date checking, navigation assistance, traffic updates, weather information, and answering various questions. What would you like help with?",
+        "I'm equipped to help with time/date queries, navigation, traffic conditions, weather info, and general questions. Just ask!"
+      ]
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "what is your name",
+        "who are you",
+        "your name",
+        "tell me your name",
+        "what should I call you",
+        "what's your name",
+        "who is this"
+      ],
+      "responses": [
+        "I'm OKDriver, your personal driving assistant!",
+        "My name is OKDriver, and I'm here to help you on your journey.",
+        "I'm OKDriver - your friendly voice assistant for the road.",
+        "You can call me OKDriver. I'm your dedicated driving assistant!"
+      ]
+    },
+    {
+      "tag": "creator",
+      "patterns": [
+        "who made you",
+        "who created you",
+        "your creator",
+        "who built you",
+        "who developed you",
+        "your developer",
+        "who designed you"
+      ],
+      "responses": [
+        "I was created by a team of developers to be your helpful driving assistant!",
+        "I'm OKDriver, developed specifically to assist drivers like you.",
+        "A talented team of developers created me to make your driving experience better and safer."
+      ]
+    },
+    {
+      "tag": "joke",
+      "patterns": [
+        "tell me a joke",
+        "make me laugh",
+        "say something funny",
+        "crack a joke",
+        "joke please",
+        "any jokes",
+        "tell a joke",
+        "funny"
+      ],
+      "responses": [
+        "Why don't scientists trust atoms? Because they make up everything!",
+        "What do you call a fake noodle? An impasta!",
+        "Why did the scarecrow win an award? He was outstanding in his field!",
+        "What do you call a bear with no teeth? A gummy bear!",
+        "Why don't eggs tell jokes? They'd crack each other up!",
+        "How does a train eat? It goes chew-chew!",
+        "What do you call a sleeping bull? A bulldozer!"
+      ]
+    },
+    {
+      "tag": "fun_fact",
+      "patterns": [
+        "tell me a fun fact",
+        "interesting fact",
+        "fun fact",
+        "did you know",
+        "tell me something interesting",
+        "random fact",
+        "cool fact"
+      ],
+      "responses": [
+        "Did you know that honey never spoils? Archaeologists found 3000-year-old honey in Egyptian tombs that was still edible!",
+        "Fun fact: A day on Venus is longer than a year on Venus!",
+        "Did you know that octopuses have three hearts?",
+        "Fun fact: Bananas are berries, but strawberries aren't!",
+        "Did you know that a group of flamingos is called a 'flamboyance'?",
+        "Fun fact: The shortest war in history lasted only 38 minutes between Britain and Zanzibar in 1896!"
+      ]
+    },
+    {
+      "tag": "driving_tip",
+      "patterns": [
+        "driving tip",
+        "safety tip",
+        "driving advice",
+        "safe driving",
+        "driving suggestion",
+        "how to drive safely",
+        "driving help",
+        "tip for driving"
+      ],
+      "responses": [
+        "Always maintain a safe following distance of at least 3 seconds behind the car in front of you.",
+        "Remember to check your blind spots before changing lanes. Your mirrors don't show everything!",
+        "Stay focused! Avoid using your phone while driving. It can wait.",
+        "Keep both hands on the wheel at 9 and 3 o'clock positions for better control.",
+        "Always signal before turning or changing lanes. Let other drivers know your intentions.",
+        "Take breaks every 2 hours on long drives to stay alert and refreshed.",
+        "Adjust your speed according to weather conditions. Slow down in rain or fog."
+      ]
+    },
+    {
+      "tag": "fuel_economy",
+      "patterns": [
+        "save fuel",
+        "fuel economy",
+        "better mileage",
+        "save gas",
+        "fuel efficiency",
+        "how to save fuel",
+        "mileage tips",
+        "fuel saving tips"
+      ],
+      "responses": [
+        "To save fuel, maintain a steady speed and avoid rapid acceleration and braking.",
+        "Keep your tires properly inflated. Under-inflated tires can reduce fuel economy.",
+        "Remove excess weight from your vehicle. Every extra kilogram costs fuel!",
+        "Use cruise control on highways to maintain constant speed and save fuel.",
+        "Plan your route to avoid traffic and unnecessary stops.",
+        "Turn off your engine if you're stopped for more than a minute."
+      ]
+    },
+    {
+      "tag": "car_maintenance",
+      "patterns": [
+        "car maintenance",
+        "maintenance tips",
+        "how to maintain car",
+        "car care",
+        "vehicle maintenance",
+        "service tips",
+        "maintenance schedule",
+        "car health"
+      ],
+      "responses": [
+        "Regular oil changes are crucial for engine health. Check your owner's manual for recommended intervals.",
+        "Check your tire pressure monthly and look for signs of uneven wear.",
+        "Don't ignore warning lights on your dashboard. Get them checked promptly.",
+        "Replace windshield wipers every 6-12 months for clear visibility in rain.",
+        "Keep your car battery terminals clean and check for corrosion.",
+        "Regular brake inspections can prevent costly repairs and ensure safety."
+      ]
+    },
+    {
+      "tag": "emergency",
+      "patterns": [
+        "emergency",
+        "help emergency",
+        "accident",
+        "breakdown",
+        "car trouble",
+        "flat tire",
+        "out of gas",
+        "battery dead",
+        "need help urgently",
+        "roadside assistance"
+      ],
+      "responses": [
+        "If this is an emergency, please call 911 or your local emergency services immediately.",
+        "For roadside assistance, contact your insurance provider or a service like AAA.",
+        "If you're in an accident, make sure everyone is safe and call for help if needed.",
+        "For a flat tire, find a safe place to pull over and contact roadside assistance.",
+        "If you're out of gas, pull over safely and call for help. Never walk on highways."
+      ]
+    },
+    {
+      "tag": "speed_limits",
+      "patterns": [
+        "speed limit",
+        "how fast can I go",
+        "speed limits near me",
+        "what's the speed limit",
+        "highway speed",
+        "city speed limit"
+      ],
+      "responses": [
+        "Always follow posted speed limits. They vary by location and road conditions.",
+        "Speed limits are typically 25-35 mph in residential areas, 45-55 mph on main roads, and 55-75 mph on highways.",
+        "Remember: speed limits are maximums, not targets. Drive at a safe speed for conditions.",
+        "School zones usually have lower speed limits during certain hours. Stay alert!"
+      ]
+    },
+    {
+      "tag": "parking",
+      "patterns": [
+        "parking help",
+        "how to park",
+        "parallel parking",
+        "parking tips",
+        "reverse parking",
+        "parking advice",
+        "parking assistance"
+      ],
+      "responses": [
+        "When parallel parking, align your car with the one in front, reverse slowly, and turn your wheel accordingly.",
+        "Always check your surroundings and use your mirrors when parking.",
+        "Take it slow when parking. It's better to take an extra moment than to hit something.",
+        "Use reference points like your car's hood or rear window to judge distances.",
+        "Practice makes perfect! Find an empty parking lot to practice different parking techniques."
+      ]
+    },
+    {
+      "tag": "road_trip",
+      "patterns": [
+        "road trip tips",
+        "planning road trip",
+        "long drive tips",
+        "road trip advice",
+        "travel tips",
+        "journey planning",
+        "trip preparation"
+      ],
+      "responses": [
+        "Before a road trip, check your vehicle: tires, fluids, brakes, and lights.",
+        "Plan your route in advance and share it with someone for safety.",
+        "Pack snacks, water, and a first-aid kit for the journey.",
+        "Take breaks every 2 hours to stretch and stay alert.",
+        "Download offline maps in case you lose cell service.",
+        "Carry phone charger, physical maps, and emergency supplies."
+      ]
+    },
+    {
+      "tag": "weather_driving",
+      "patterns": [
+        "driving in rain",
+        "rainy driving",
+        "driving in fog",
+        "fog driving",
+        "driving in snow",
+        "snow driving",
+        "bad weather driving",
+        "driving in storm"
+      ],
+      "responses": [
+        "In rain, reduce speed, increase following distance, and use headlights.",
+        "In fog, use low beams or fog lights. High beams reflect off fog and reduce visibility.",
+        "On snowy/icy roads, drive slowly, brake gently, and avoid sudden movements.",
+        "If hydroplaning, ease off the accelerator and steer straight until you regain traction.",
+        "In bad weather, if visibility is very poor, pull over safely and wait it out."
+      ]
+    },
+    {
+      "tag": "music",
+      "patterns": [
+        "play music",
+        "play song",
+        "music suggestion",
+        "recommend music",
+        "driving music",
+        "songs for drive",
+        "playlist for driving"
+      ],
+      "responses": [
+        "I can't play music directly, but you might enjoy some upbeat driving playlists on Spotify or Apple Music!",
+        "For driving, many people enjoy rock, electronic, or their favorite podcasts. What do you like?",
+        "I'd recommend creating a driving playlist with your favorite upbeat songs before you hit the road.",
+        "Consider audiobooks or podcasts for long drives to keep your mind engaged."
+      ]
+    },
+    {
+      "tag": "restaurants",
+      "patterns": [
+        "restaurants near me",
+        "food near me",
+        "where to eat",
+        "good restaurants",
+        "dining options",
+        "places to eat",
+        "recommend restaurant"
+      ],
+      "responses": [
+        "I'd recommend checking Google Maps or Yelp for restaurant recommendations near you.",
+        "For food options, apps like Zomato or Swiggy can show you restaurants in your area.",
+        "You can ask your navigation app to show restaurants along your route.",
+        "I don't have real-time restaurant data, but your maps app can help you find great places to eat!"
+      ]
+    },
+    {
+      "tag": "gas_station",
+      "patterns": [
+        "gas station near me",
+        "petrol pump",
+        "fuel station",
+        "where to get gas",
+        "nearest gas station",
+        "petrol near me",
+        "diesel near me",
+        "gas near me"
+      ],
+      "responses": [
+        "Check your navigation app for the nearest gas stations with current prices.",
+        "Google Maps can show you gas stations along your route with fuel prices.",
+        "I'd recommend using a gas finder app to locate the nearest station with the best prices.",
+        "Your car's navigation system might also have a 'nearby gas stations' feature."
+      ]
+    },
+    {
+      "tag": "unknown",
+      "patterns": [
+        "i don't know",
+        "not sure",
+        "maybe",
+        "perhaps",
+        "whatever",
+        "anything",
+        "something"
+      ],
+      "responses": [
+        "That's okay! Just ask me whatever you'd like to know.",
+        "No problem! I'm here to help with any questions you have.",
+        "Take your time. What would you like to ask me?",
+        "I'm here whenever you're ready. Just speak up!"
+      ]
+    },
+    {
+      "tag": "repeat",
+      "patterns": [
+        "can you repeat",
+        "say that again",
+        "repeat please",
+        "what did you say",
+        "say again",
+        "come again",
+        "pardon",
+        "excuse me"
+      ],
+      "responses": [
+        "Of course! Let me repeat: {last_response}",
+        "I said: {last_response}",
+        "Sure, I said: {last_response}"
+      ]
+    },
+    {
+      "tag": "compliment",
+      "patterns": [
+        "you're great",
+        "you're awesome",
+        "good job",
+        "well done",
+        "you're helpful",
+        "you're the best",
+        "nice work",
+        "good work"
+      ],
+      "responses": [
+        "Thank you! I'm happy to help!",
+        "You're too kind! I'm glad I could assist.",
+        "Thanks! That made my day!",
+        "I appreciate that! Let me know what else you need."
+      ]
+    },
+    {
+      "tag": "insult",
+      "patterns": [
+        "you're bad",
+        "you're useless",
+        "you don't work",
+        "stupid",
+        "dumb",
+        "not helpful",
+        "waste"
+      ],
+      "responses": [
+        "I'm sorry I couldn't help better. I'm still learning!",
+        "I apologize for the inconvenience. I'm here to improve.",
+        "I understand your frustration. How can I help you better?",
+        "I'm sorry. Please tell me what you need and I'll try my best."
+      ]
+    },
+    {
+      "tag": "language",
+      "patterns": [
+        "speak hindi",
+        "hindi mein baat karo",
+        "tamil",
+        "telugu",
+        "bengali",
+        "other language",
+        "can you speak hindi"
+      ],
+      "responses": [
+        "I currently only speak English, but I'm here to help you in English!",
+        "At the moment, I only understand and respond in English. I hope that's okay!",
+        "I'm designed for English conversations, but I'm happy to help you in English!"
+      ]
+    }
+  ]
+}
